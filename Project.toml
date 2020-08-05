@@ -1,0 +1,13 @@
+name = "apo"
+uuid = "29c7b0f8-dfc0-42c6-9f9c-19af6e309180"
+authors = ["John Ferrier"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
