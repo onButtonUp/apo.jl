@@ -15,10 +15,10 @@ Apple clang version 11.0.3 . . .
 ```
 """
 function po()
-    anIOBuffer = IOBuffer();
-    versioninfo(anIOBuffer, verbose=true);
-    println("System Version Info: ", String(take!(anIOBuffer)))
-    println("*\n")
+    # anIOBuffer = IOBuffer();
+    # versioninfo(anIOBuffer, verbose=true);
+    # println("System Version Info: ", String(take!(anIOBuffer)))
+    # println("*\n")
     println("Clang: ", read(`clang --version`, String))
     println("*\n")
     println("Load paths: ", Base.load_path())
@@ -47,6 +47,6 @@ function po()
     println("*\n")
     println("VS Code: ", read(`code --version`, String))
     println("*\n")
-    println()
+    println("NOTE: for additional information use: versioninfo(verbose=true)")
 
 end
