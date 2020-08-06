@@ -4,6 +4,6 @@ include("apoCode.jl")
 
 greet() = println("Hi there.")
 
-export apo, greet
+export po, greet
 
 end

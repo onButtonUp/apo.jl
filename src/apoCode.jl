@@ -1,5 +1,5 @@
 """
-apo()
+po()
 
 
 Returns information about the platform ontology.
@@ -7,14 +7,14 @@ Returns information about the platform ontology.
 ### Examples
 
 ```
-julia> apo()
+julia> po()
 "10.15.6\n"
 
-julia> apo()
+julia> po()
 Apple clang version 11.0.3 . . .
 ```
 """
-function apo()
+function po()
 
     ##versioninfo()
     returnString = read(`python --version`, String)
